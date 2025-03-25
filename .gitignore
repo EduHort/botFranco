@@ -1,0 +1,9 @@
+node_modules
+.wwebjs_auth
+.wwebjs_cache
+
+database/messageTracking.db
+respostas.xlsx
+util/error.log
+
+*.js

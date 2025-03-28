@@ -2,8 +2,8 @@ node_modules
 .wwebjs_auth
 .wwebjs_cache
 
-database/messageTracking.db
+messageTracking.db
 respostas.xlsx
-util/error.log
+error.log
 
 *.js

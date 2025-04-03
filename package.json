@@ -1,6 +1,7 @@
 {
   "name": "botfranco",
   "version": "1.0.0",
+  "description": "Este guia detalha como configurar e executar o projeto `botFranco` no Windows, utilizando Node.js, npm e PM2 para gerenciamento.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +11,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "better-sqlite3": "^11.9.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.27.0",
+    "xlsx": "^0.18.5"
+  },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",
-    "@types/node": "^22.13.11",
+    "@types/node": "^22.14.0",
     "@types/qrcode-terminal": "^0.12.2",
     "@types/xlsx": "^0.0.35",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
-  },
-  "dependencies": {
-    "better-sqlite3": "^11.9.1",
-    "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.26.0",
-    "xlsx": "^0.18.5"
   }
 }

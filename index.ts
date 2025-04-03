@@ -1,5 +1,4 @@
 import { clearUserTrackingData, findUserTrackingData, registerUserInteraction, updateMessageTracking } from "./database/db";
-import { TrackingData } from "./types/types";
 import client from "./util/WhatsAppClient";
 import { logError } from "./util/errors";
 import { addRowToExcel } from "./util/excel";

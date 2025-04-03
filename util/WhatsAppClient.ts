@@ -6,16 +6,12 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
         executablePath: '/usr/bin/google-chrome',     //linux com google chrome
     },
 });
 
 client.initialize();
-
-client.on('qr', (qr) => {
-    qrcode.generate(qr, {small: true});
-});
 
 client.on('authenticated', () => {
     console.log('AUTHENTICATED');
@@ -27,6 +23,10 @@ client.on('auth_failure', msg => {
 
 client.once('ready', () => {
     console.log('Cliente está pronto!');
+});
+
+client.on('qr', qr => {
+    qrcode.generate(qr, {small: true});
 });
 
 export default client;

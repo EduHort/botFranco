@@ -3,7 +3,7 @@ node_modules
 .wwebjs_cache
 
 messageTracking.db
-respostas.xlsx
+relatorio_botFranco.xlsx
 error.log
 
 *.js
